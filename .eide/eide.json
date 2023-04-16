@@ -3,7 +3,8 @@
   "type": "ARM",
   "dependenceList": [],
   "srcDirs": [
-    ".eide/deps"
+    ".eide/deps",
+    "Sereve"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -343,6 +344,23 @@
           "proType": 1,
           "speed": 8000,
           "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x8000000",
+          "elFile": "None",
+          "optionBytes": ".eide/target 1.st.option.bytes.ini",
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f1x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
         }
       },
       "custom_dep": {
@@ -353,7 +371,8 @@
           "Library",
           ".cmsis/include",
           "RTE/_Target 1",
-          ".eide/deps"
+          ".eide/deps",
+          "Sereve"
         ],
         "libList": [],
         "sourceDirList": [],
