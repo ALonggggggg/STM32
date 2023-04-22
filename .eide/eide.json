@@ -4,7 +4,8 @@
   "dependenceList": [],
   "srcDirs": [
     ".eide/deps",
-    "Sereve"
+    "Sereve",
+    "Hardware"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -357,7 +358,7 @@
           "otherCmds": ""
         },
         "OpenOCD": {
-          "bin": "",
+          "bin": "${ExecutableName}.hex",
           "target": "stm32f1x",
           "interface": "stlink",
           "baseAddr": "0x08000000"
@@ -372,7 +373,8 @@
           ".cmsis/include",
           "RTE/_Target 1",
           ".eide/deps",
-          "Sereve"
+          "Sereve",
+          "Hardware"
         ],
         "libList": [],
         "sourceDirList": [],
